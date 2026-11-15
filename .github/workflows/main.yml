@@ -393,11 +393,11 @@ jobs:
         include:
         - arch: arm64
           runner: macos-15
-          mpv: 'mpv-v0.41.0-macos-15-arm.zip'
+          mpv: 'mpv-v0.42.0-macos-15-arm.zip'
           target: '15.0'
         - arch: x86_64
           runner: macos-15-intel
-          mpv: 'mpv-v0.41.0-macos-15-intel.zip'
+          mpv: 'mpv-v0.42.0-macos-15-intel.zip'
           target: '15.0'
     runs-on: ${{ matrix.runner }}
     env:
@@ -414,7 +414,7 @@ jobs:
       uses: robinraju/release-downloader@v1
       with:
         repository: 'mpv-player/mpv'
-        tag: 'v0.41.0'
+        tag: 'v0.42.0'
         fileName: ${{ matrix.mpv }}
         out-file-path: macos
     - name: Install dependencies

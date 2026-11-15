@@ -10,7 +10,7 @@ x86_64.
 pip install '.[all]' pyinstaller dmgbuild meson ninja
 ./gen_pkg.sh --skip-build                          # fetches the shader pack
 MACOSX_DEPLOYMENT_TARGET=15.0 python tools/build_win_fribidi.py --output-dir macos
-curl -Lo macos/mpv.zip https://github.com/mpv-player/mpv/releases/download/v0.41.0/mpv-v0.41.0-macos-15-arm.zip
+curl -Lo macos/mpv.zip https://github.com/mpv-player/mpv/releases/download/v0.42.0/mpv-v0.42.0-macos-15-arm.zip
 unzip -o macos/mpv.zip -d macos && tar xzf macos/mpv.tar.gz -C macos
 ./macos/build.sh
 ./artifacts.sh macos arm64   # -> publish/macOS/jellyfin-mpv-shim_<version>_macOS_arm64.dmg
